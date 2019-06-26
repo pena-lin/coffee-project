@@ -1,16 +1,21 @@
-"use strict"
+"use strict";
 
+var userInput;
+
+function userInput(){
+    userInput = document.getElementById('search').value;
+    console.log(userInput);
+}
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<div>' + coffee.id + '</div>';
-    html += '<div>' + coffee.name + '</div>';
-    html += '<div>' + coffee.roast + '</div>';
+    // html += '<div>' + coffee.id + '</div>';
+    html += '<div><h1>' + coffee.name + '</h1></div>';
+    html += '<div><P>' + coffee.roast + '</P></div>';
     html += '</div>';
 
     return html;
 }
 
-git
 function renderCoffees(coffees) {
     var html = '';
     for(var i = 0; i<coffees.length; i++) {
