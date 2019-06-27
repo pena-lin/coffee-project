@@ -130,3 +130,4 @@ search.addEventListener('keyup', displaySearchResult);
 // submitButton1.addEventListener('click', updateCoffees);
 // sendButton1.addEventListener('click',displaySearchResult);
 // search1.addEventListener('keyup', displaySearchResult);
+
