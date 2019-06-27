@@ -7,10 +7,10 @@ function userInput(){
     console.log(userInput);
 }
 function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
+    var html = '<div class="coffee col-md-6">';
     // html += '<div>' + coffee.id + '</div>';
-    html += '<div><h1>' + coffee.name + '</h1></div>';
-    html += '<div><P>' + coffee.roast + '</P></div>';
+    html += '<h1>' + coffee.name + '</h1>';
+    html += '<P class="center-letter">' + coffee.roast + '</P>';
     html += '</div>';
 
     return html;
@@ -94,9 +94,16 @@ function addCoffee() {
 
 function arrangeCoffee() {
     coffees.sort(function(a, b) {
-        return a.id - b.id
+        // return a.id - b.id
+
+            var x = a.name.toLowerCase();
+            var y = b.name.toLowerCase();
+            if (x < y) {return -1;}
+            if (x > y) {return 1;}
+            return 0;
+
     });
-    coffees.reverse();
+    // coffees.reverse();
 }
 
 function formatNewCoffee(input) {
@@ -122,4 +129,5 @@ sendButton.addEventListener('click',displaySearchResult);
 search.addEventListener('keyup', displaySearchResult);
 // submitButton1.addEventListener('click', updateCoffees);
 // sendButton1.addEventListener('click',displaySearchResult);
-// search1.addEventListener('keyup', displaySearchResult);;
+// search1.addEventListener('keyup', displaySearchResult);
+
