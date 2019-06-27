@@ -6,32 +6,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Coffee!</h1>
+<h1>Coffee!</h1>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
-        <label for="search">Search</label>
-        <input type="text" id="search" name="search">
-        <button type="submit" id="send">Send</button>
-<!--    <label for="coffee-search">coffee name</label>-->
-<!--    <input id="coffee-search" value="" type="text" onekeyup="searchCoffees(value)">-->
-    <table>
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-        <tbody id="coffees"></tbody>
-    </table>
-    <script src="main.js"></script>
+<form>
+    <label for="roast-selection"></label>
+    <select id="roast-selection">
+        <option>all</option>
+        <option>light</option>
+        <option>medium</option>
+        <option>dark</option>
+    </select>
+    <input id="submit" type="submit" />
+</form>
+<label for="search">Search</label>
+<input type="text" id="search" name="search">
+<button type="submit" id="send">Send</button>
+
+<table>
+    <!--        <thead>-->
+    <!--            <tr>-->
+    <!--                <th>ID</th>-->
+    <!--                <th>NAME</th>-->
+    <!--                <th>ROAST</th>-->
+    <!--            </tr>-->
+    <!--        </thead>-->
+    <tbody id="coffees"></tbody>
+</table>
+
+<h1>Add A Coffee!</h1>
+
+<label for="add-coffee-roast-select">Roast</label>
+<select id="add-coffee-roast-select">
+    <option value="light">light</option>
+    <option value="medium">medium</option>
+    <option value="dark">dark</option>
+</select>
+
+<label for="add-coffee-name">Name</label>
+<input id="add-coffee-name" value="" type="text"/>
+
+<button id="add-coffee" type="button" onclick="addCoffee()">Submit</button>
+
+<script src="main.js"></script>
+
 </body>
 </html>
