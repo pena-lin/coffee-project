@@ -7,3 +7,33 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+.header{
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Arial;
+}
+h1 {
+    text-align: center;
+}
+#roast-selection, #submit, #send, #add-coffee, #search, #add-coffee-roast-select, #add-coffee-name{
+    width: 100%
+}
+.add{
+    margin-top: 25px;
+    color: orange;
+}
+.style-font{
+    font-weight: bold;
+    font-size: 20px;
+    color:cadetblue;
+}
+#roast-selection, #search, #add-coffee-name{
+    margin-bottom: 10px;
+}
+.center-letter{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+}
